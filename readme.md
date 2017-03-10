@@ -37,3 +37,9 @@
 一般编码的时候记得在开头用上
 ------
         'use strict'; //用来表示开启严格模式
+
+推送git上的方法
+----------
+    git commit -m "first commit"
+        git remote add origin git@github.com:312307025/myblog.git
+        git push -u origin master
