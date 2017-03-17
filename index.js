@@ -30,6 +30,12 @@ app.use(session({
         url: config.mongodb //mongodb地址
     })
 }));
+
+app.use(require('express-formidable')({
+    uploadDir: path.join(__dirname, 'public/img'), //上传文件目录
+    keepExtensions: true //保留后缀
+}));
+
 // flash中间件，用来显示通知
 app.use(flash());
 

@@ -15,6 +15,7 @@
     winston: 日志
     express-winston: 基于 winston 的用于 express 的日志中间件
     mysql:数据库
+    pm2:node的进程管理控件(未安装未使用)
 
 教程连接
 ------
@@ -33,6 +34,7 @@
 项目运行方法
 ------
     supervisor --harmony index
+    browser-sync start --server --files "**/*.css,**/*.html" 热部署
 
 一般编码的时候记得在开头用上
 ------
